@@ -49,8 +49,19 @@ class: theme
 ---
 ## How to execute it?
 
-- Download instructions
+- Download this git repo
+- Open your command-line and browse to the folder
+- Install the NW.js dependency using NPM:
 
+```xml
+> npm install
+```
+
+- Execute this app with:  
+
+```xml
+> npm start
+```
 ---
 ## How to create an slideshow?
 
@@ -108,10 +119,6 @@ class: theme
 ---
 ## Quick Start
 
-- Download: visit the [official repo](https://github.com/nwjs/nw.js/#downloads) for an updated version.
----
-## Quick Start
-
 - Create a file named as **package.json**
 
 ```javascript
@@ -119,6 +126,9 @@ class: theme
   "name": "nw-hello-world",
   "version": "1.0.0",
   "main": "index.html",
+  "scripts": {
+    "start": "nw"
+  },
   "window": {
     "toolbar": false,
     "icon": "my-app-icon.png",
@@ -130,6 +140,14 @@ class: theme
     "min_height": 300
   }
 }
+```
+---
+## Quick Start
+
+- Install NW.js using NPM
+
+```xml
+> npm install nw --save
 ```
 ---
 ## Quick Start
@@ -186,22 +204,10 @@ request.get(fileUrl, function (err, response, body) {
 ---
 ## Running
 
-- On Windows:
+- As you have added to your **package.json** the property **scripts.start** with value **nw**, execute the following command:
 
 ```xml
-> C:\path\to\nwjs\nw.exe C:\path\to\your\project
-```
-
-- On Mac OS X:
-
-```xml
-> /path/to/nwjs/Contents/MacOS/nwjs /path/to/your/project
-```
-
-- On Linux:
-
-```xml
-> /path/to/nwjs /path/to/your/project
+> npm start
 ```
 ---
 ## Quick Start
@@ -289,17 +295,8 @@ tray.menu = trayMenu;
 ```javascript
 {
   "name": "nw-hello-world",
-  "version": "1.0.0",
-  "main": "index.html",
   "window": {
-    "toolbar": true, // here!
-    "icon": "my-app-icon.png",
-    "fullscreen": false,
-    "resizable" : true,
-    "width": 800,
-    "height": 600,
-    "min_width": 400,
-    "min_height": 300
+    "toolbar": true // here!
   }
 }
 ```

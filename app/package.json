@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A HTML5 slideshow Desktop App built with NW.js (Node-Webkit). Demo app is a presentation of how to use NW.js",
   "main": "index.html",
+  "scripts": {
+    "start": "nw"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zanon-io/nw-presenter.git"
@@ -22,5 +25,8 @@
     "height": 600,
     "min_width": 400,
     "min_height": 300
+  },
+  "dependencies": {
+    "nw": "^0.12.3"
   }
 }
