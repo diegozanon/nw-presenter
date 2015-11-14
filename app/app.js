@@ -14,9 +14,9 @@ fileMenu.append(new gui.MenuItem({
   }
 }));
 
-var openRecentMenu = new gui.Menu();
+var openMenu = new gui.Menu();
 
-openRecentMenu.append(new gui.MenuItem({
+openMenu.append(new gui.MenuItem({
   label: 'Recente File X',
   click: function() {
     alert('Clicked to open a recent file');
@@ -24,7 +24,7 @@ openRecentMenu.append(new gui.MenuItem({
 }));
 
 menubar.append(new gui.MenuItem({ label: 'File', submenu: fileMenu}));
-fileMenu.append(new gui.MenuItem({ label: 'Open Recent File', submenu: openRecentMenu}));
+fileMenu.append(new gui.MenuItem({ label: 'Open File', submenu: openMenu}));
 
 var win = gui.Window.get();
 win.menu = menubar;
@@ -51,4 +51,3 @@ $(document).ready(function() {
     return false;
   });
 });
-

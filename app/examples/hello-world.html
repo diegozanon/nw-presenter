@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <div id="my-img"></div>  
+    <script src="../js/assets/jquery.min.js"></script>
+    <script>
+    /*
+	var request = require('request').defaults({ encoding: null });
+	var fileUrl = 'http://nwjs.io/images/nw.png';
+	    
+	request.get(fileUrl, function (err, response, body) {
+	    
+	  if (err || response.statusCode != 200)
+	    throw 'Error retrieving image';
+	    
+	  var base64Image = 
+	    "data:image/png;base64," 
+	    + new Buffer(body).toString('base64');
+	    
+	  // using jQuery to write the response to the UI
+	  $('#my-img').append('<img src=\"' + base64Image + '\" />');
+	});
+	*/
+
+	// Note: the example code was not used because it requires the "request" dependency
+	// As a Node.js beginner may not know yet about "npm install", I've decided to remove this for easier usage
+	// Also, you can't use Node module inside an iframe. You would need to add this code to app.js
+
+	// Simplified version:
+	$('#my-img').append('<img src="../images/nw.png" />');
+
+    </script>
+  </body>
+</html>
