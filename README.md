@@ -36,7 +36,8 @@
 
 ## HTML-only Demo
 
-- As a demo app, the following slides were created to present what is NW.js: http://zanon-io.github.io/nw-presenter
+- As a demo app, the following slides were created to present what is NW.js:  
+http://zanon-io.github.io/nw-presenter
 
 ## First slide
 
