@@ -42,5 +42,6 @@
 
 ![nw-presenter](https://raw.githubusercontent.com/zanon-io/nw-presenter/master/app/images/nw-presenter.png)
 
+## Second slide
 
-
+![nw-presenter-2](https://raw.githubusercontent.com/zanon-io/nw-presenter/master/app/images/nw-presenter-2.png)
