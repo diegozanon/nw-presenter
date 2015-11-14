@@ -34,9 +34,9 @@
 - Markdown is compiled using [remark](https://github.com/gnab/remark)
 - For a remark tutorial, follow this: http://gnab.github.io/remark
 
-## Demo
+## HTML-only Demo
 
-- As a demo app, the following slides were created to present what is NW.js: 
+- As a demo app, the following slides were created to present what is NW.js: http://zanon-io.github.io/nw-presenter
 
 ## First slide
 
