@@ -9,9 +9,6 @@
 ## Why use it?
 
 - If you want to convince others of how powerful NW.js is to create desktop apps, presenting its advantages using its own technology is a good start.
-
-## Why use it?
-
 - Embed any fancy HTML5 code inside your presentation and it will execute as it would in any browser. That's great to teach how to use Angular, React, Ember, etc.
 - It can be used for any kind of presentation. If you are interested only in the HTML5 slideshow, try https://github.com/gnab/remark
 
