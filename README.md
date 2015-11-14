@@ -28,7 +28,7 @@
 > npm start
 ```
 
-## How to create an slideshow?
+## How to create a slideshow?
 
 - Slideshows are created using [Markdown](http://commonmark.org/) formatting
 - Markdown is compiled using [remark](https://github.com/gnab/remark)
