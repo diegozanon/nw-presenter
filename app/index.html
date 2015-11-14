@@ -35,7 +35,7 @@ class: theme
 - A desktop app that presents slideshows
 - Its multi-platform because NW.js is used
 - Interface is a HTML5 slideshow
-- Mardown formatting to create each slide
+- Markdown formatting to create each slide
 - Syntax highlighting for code
 ---
 ## Why use it?
@@ -54,13 +54,13 @@ class: theme
 ---
 ## How to create an slideshow?
 
-- Slideshows are created using Markdown formatting
+- Slideshows are created using [Markdown](http://commonmark.org/) formatting
 - Markdown is compiled using [remark](https://github.com/gnab/remark)
-- For a remark tutorial, follow this: http://gnab.github.io/remark/#1
+- For a remark tutorial, follow this: http://gnab.github.io/remark
 ---
 ## Demo
 
-- As a demo app, the following slides were created to present what NW.js is
+- As a demo app, the following slides were created to present what is NW.js.
 ---
 ## NW.js 
 
@@ -85,7 +85,7 @@ class: theme
 ---
 ## NW.js Apps
 
-- [Demo](https://github.com/zcbenz/nw-sample-apps)
+- [Demos](https://github.com/zcbenz/nw-sample-apps)
 - [Real apps](https://github.com/nwjs/nw.js/wiki/List-of-apps-and-companies-using-nw.js)
 ---
 ## NW.js Apps
@@ -108,7 +108,7 @@ class: theme
 ---
 ## Quick Start
 
-- Download: visite the [official repo](https://github.com/nwjs/nw.js/#downloads) for an updated version
+- Download: visit the [official repo](https://github.com/nwjs/nw.js/#downloads) for an updated version.
 ---
 ## Quick Start
 
@@ -153,7 +153,7 @@ class: theme
 ---
 ## Quick Start
 
-- As you see, this HTML have:
+- As you can see, this HTML has:
   - An empty div tag with **id="my-img"**
   - Reference to a minified version of jQuery
   - Reference to an **app.js** file where we'll add our Node.js code
@@ -182,7 +182,7 @@ request.get(fileUrl, function (err, response, body) {
 ---
 ## Quick Start
 
-- What we are doing with **app.js** is to get an external image resource and add it to our layout
+- What we are doing with **app.js** is to get an external image resource and adding it to our layout.
 ---
 ## Running
 
@@ -217,7 +217,9 @@ request.get(fileUrl, function (err, response, body) {
 .large-image[![menu](images/menu.png)]
 .large-image[![tray-icon](images/tray-icon.png)]
 ---
-## Menu Bars
+## Menu Bars - Part I
+
+- Include in your **app.js** 
 
 ```javascript
 var gui = require('nw.gui');
@@ -234,7 +236,13 @@ fileMenu.append(new gui.MenuItem({
     alert('Clicked to create a new file');
   }
 }));
+```
+---
+## Menu Bars - Part II
 
+- Include in your **app.js** 
+
+```javascript
 var openMenu = new gui.Menu();
 
 openMenu.append(new gui.MenuItem({
@@ -271,7 +279,7 @@ tray.menu = trayMenu;
 ---
 ## Developer Tools
 
-- Since Chromium is what is rendering this layout, you can use the Chrome Developer Tools to check design issues.
+- Since Chromium is what is rendering this layout, you can use the Chrome Developer Tools to verify design issues.
 - To enable the Chrome Developer tools, modify your **package.json** file and change the property **window.toolbar** to true.
 ---
 ## Developer Tools
@@ -297,6 +305,8 @@ tray.menu = trayMenu;
 ```
 ---
 ## Developer Tools
+
+- After changing:
 
 .large-image[![toolbar](images/toolbar.png)]
 ---
@@ -345,7 +355,12 @@ nw
 ## NW.js Issues
 
 - The distributable package must contains the NW.js (> 60MB)
-- As the source code is distributed in this package, if you need to keep it private, you need to use [V8 snapshots](https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot) and your app's JS performance will be 30% slower
+- As the source code is distributed in this package, if you need to keep it private, you can use [V8 snapshots](https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot), but your app's JS performance will be 30% slower
+---
+## Conclusion
+
+- NW.js is great! Or do you still prefer to write your desktop apps with Java Swing or C# Windows Forms?
+- If you liked it, check out [Electron](https://github.com/atom/electron). Its another framework that follows the same ideas with some differences.
 ---
 ## References
 
